@@ -122,7 +122,7 @@ npm start
 
 | Match List                              | Responsive View                    |
 | --------------------------------------- | ---------------------------------- |
-| ([image](https://github.com/user-attachments/assets/5a361e30-be14-49c3-8adb-02f8ebc9b87c) | ([image](https://github.com/user-attachments/assets/ca6cf99b-ed42-4491-bfc6-48bb5c20052c) |
+| (![image](https://github.com/user-attachments/assets/5a361e30-be14-49c3-8adb-02f8ebc9b87c) | (![image](https://github.com/user-attachments/assets/ca6cf99b-ed42-4491-bfc6-48bb5c20052c) |
 
 ---
 
