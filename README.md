@@ -136,7 +136,7 @@ MIT © [Aaditya Sandeep Ardhapurkar](https://github.com/Add2207)
 
 Feel free to reach out or contribute!
 
-* GitHub: [@your-username](https://github.com/Add2207)
+* GitHub: [@Add2207](https://github.com/Add2207)
 
 ```
 
