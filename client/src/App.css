@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0e;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 40px 20px;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1000px;
+  min-height: calc(100vh - 80px); /* full screen height minus padding */
+  padding: 30px 25px;
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 255, 100, 0.1);
+  border: 1px solid #1f1f1f;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #00ff57;
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 255, 100, 0.6);
+  letter-spacing: 1px;
+}
+
+.match-item {
+  border: 1px solid #1f1f1f;
+  padding: 15px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #181818;
+  box-shadow: 0 0 10px rgba(0, 255, 100, 0.05);
+}
+
+.match-item:hover {
+  background-color: #0d0d0d;
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 255, 100, 0.1);
+}
+
+.team-names {
+  font-weight: 600;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #f4f4f4;
+}
+
+.team-names::before {
+  content: "⚽ ";
+  color: #00ff57;
+}
+
+.kickoff-time {
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.kickoff-time::before {
+  content: "🕒 ";
+}
+
+.score {
+  font-weight: 800;
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+  color: #00ff57;
+  text-shadow: 0 0 6px rgba(0, 255, 100, 0.5);
+}
+
+.loading,
+.error {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 1.3rem;
+}
+
+.loading {
+  color: #999;
+  animation: pulse 1.5s infinite;
+}
+
+.loading::before {
+  content: "⏳ ";
+}
+
+.error {
+  color: #ff4d4d;
+}
+
+.error::before {
+  content: "❌ ";
+}
+
+.league-logo {
+  width: 36px;
+  height: auto;
+  /* filter: brightness(.2) drop-shadow(0 0 1px #00ff57); */
+  transition: transform 0.3s ease;
+}
+
+.league-logo:hover {
+  transform: scale(1.5);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
